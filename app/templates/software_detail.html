@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ software.projeto }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ software.projeto }}</h1>
+        <p><strong>Funcionalidade:</strong> {{ software.funcionalidade }}</p>
+        <p><strong>Cliente:</strong> {{ software.cliente }}</p>
+        <p><strong>Versão:</strong> {{ software.versao }}</p>
+        <button class="button">Votar</button>
+        <a href="/softwares" class="button">Voltar</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ parceiro.nome }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ parceiro.nome }}</h1>
+        <p><strong>Endereço:</strong> {{ parceiro.endereco }}</p>
+        <p><strong>Telefone:</strong> {{ parceiro.telefone }}</p>
+        <p><strong>Email:</strong> {{ parceiro.email }}</p>
+        <p><strong>Tipo de Parceiro:</strong> {{ parceiro.tipo_de_parceiro }}</p>
+        <a href="/parceiros" class="button">Voltar</a>
+    </div>
+</body>
+</html>

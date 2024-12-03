@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softwares</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Softwares</h1>
+        <ul>
+            {% for software in softwares %}
+            <li>
+                <a href="/softwares/{{ software.id }}">{{ software.projeto }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="/menu" class="button">Voltar ao Menu</a>
+    </div>
+</body>
+</html>

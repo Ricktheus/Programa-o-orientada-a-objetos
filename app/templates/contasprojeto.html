@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contas do Projeto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Contas do Projeto</h1>
+        <ul>
+            {% for projeto in projetos %}
+            <li>
+                <a href="/contasprojeto/{{ projeto.id }}">{{ projeto.nome }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+        <a href="/" class="button">Voltar ao Menu</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema Profissional</title>
+    <!-- Link para o CSS padrão -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Ícone (opcional) -->
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Sistema Profissional</h1>
+    </header>
+    <main class="container">
+        <div class="login-wrapper" style="max-width: 400px; margin: auto;">
+            <h2 style="text-align: center; margin-bottom: 20px;">Faça seu Login</h2>
+            <form action="/login" method="POST">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+
+                <button type="submit" style="width: 100%; margin-top: 10px;">Entrar</button>
+            </form>
+            <p style="text-align: center; margin-top: 15px;">
+                Esqueceu sua senha? <a href="/reset" style="color: #4e54c8;" title="Recupere sua senha">Recupere-a aqui</a>
+            </p>
+            <p style="text-align: center;">
+                Não possui uma conta? <a href="/register" style="color: #4e54c8;" title="Registrar nova conta">Registre-se</a>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sistema Profissional. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+   

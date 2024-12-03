@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contratos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Contratos</h1>
+        <div class="contract-list">
+            <div class="contract-item">
+                <p><strong>Cliente:</strong> Goiânia Company</p>
+                <p><strong>Tipo de Plano:</strong> Mensal</p>
+                <p><strong>Status:</strong> Ativo</p>
+                <p><strong>Valor:</strong> R$ 3.000</p>
+            </div>
+            <div class="contract-item">
+                <p><strong>Cliente:</strong> Brasil Company</p>
+                <p><strong>Tipo de Plano:</strong> Mensal</p>
+                <p><strong>Status:</strong> Ativo</p>
+                <p><strong>Valor:</strong> R$ 4.000</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="{{ url_for('routes.menu_page') }}" class="button">Voltar</a>
+        </div>
+    </div>
+</body>
+</html>
